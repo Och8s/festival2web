@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FESTIVAL DUO ELECTRONIC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>FESTIVAL DE MÚSICA ELECTRÓNICA</h1>
+        <nav aria-label="Navegación principal" tabindex="0">
+            <ul>
+                <li><a href="index.html" aria-current="page" tabindex="0">El festival</a></li>
+                <li><a href="#artistas" tabindex="0">Artistas</a></li>
+                <li><a href="#entradas" tabindex="0">Entradas</a></li>
+                <li><a href="info.html" tabindex="0">Información Práctica</a></li>
+                <li><a href="#contacto" tabindex="0">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="festival" aria-label="Información del festival">
+            <article tabindex="0" class="cartel" style="width: 30%; margin-right: 20px;">
+                <img src="cartel.jpg" alt="Cartel del festival" style="width: 100%;">
+            </article>
+            <article tabindex="0" class="info-video" aria-label="Vídeo promocional del festival">
+                <h2 tabindex="0">El festival</h2>
+                <p tabindex="0">"Ya está aquí el 4º Festival de música electrónica en Barcelona" - Palau Sant Jordi, Barcelona </p>
+                <video controls width="100%" loop tabindex="0">
+                    <source src="media/dance.mp4" type="video/mp4">
+                    <track src="media/captions/dance.vtt" label="català" kind="captions" srclang="cat" default>
+                    El teu navegador no admet vídeo HTML5.
+                </video>
+                <p id="descripcion-video" tabindex="0">Vídeo promocional del festival - Dj Fajardo - Sin sonido</p>
+            </article>
+        </section>
+        <audio id="audioPlayer" tabindex="0" controls style="width: 100%;" aria-label="Canción oficial del festival">
+            <source src="media/fashion-electronic-pop-red-tape-134710.mp3" type="audio/mp3">
+            El teu navegador no admet àudio HTML5.
+        </audio>
+        <p id="descripcion-audio" tabindex="0">Canción oficial del festival "Electronic fashion" - License ...</p>
+
+        <section id="artistas" tabindex="0" aria-label="Artistas del festival">
+            <h2 tabindex="0">Artistas</h2>
+            <table tabindex="0" aria-label="Tabla de artistas">
+                <tbody>
+                    <tr>
+                        <td class="info-cell" tabindex="0">
+                            <p>20:00</p>
+                            <p>David Guetta</p>
+                            <p>Escenario Principal</p>
+                        </td>
+                        <td class="artista-cell" tabindex="0">
+                            <div class="artista" style="background-image: url('guetta.jpeg');"
+                                role="img" aria-label="Foto de David Guetta actuando en el escenario"> </div>
+                        </td>
+                        <td class="info-cell" tabindex="0">
+                            <p>21:00</p>
+                            <p>Martin Garrix</p>
+                            <p>Escenario Secundario</p>
+                        </td>
+                        <td class="artista-cell" tabindex="0">
+                            <div class="artista" style="background-image: url('garrix.jpeg');"
+                                role="img" aria-label="Foto de Martin Garrix fondo abstracto"> </div>
+                        </td>
+                        <td class="info-cell" tabindex="0">
+                            <p>22:00</p>
+                            <p>Calvin Harris</p>
+                            <p>Escenario Principal</p>
+                        </td>
+                        <td class="artista-cell" tabindex="0">
+                            <div class="artista" style="background-image: url('harris.jpg');"
+                                role="img" aria-label="Foto de Calvin Harris con los brazos abiertos"> </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="info-cell" tabindex="0">
+                            <p>23:00</p>
+                            <p>Armin van Buuren</p>
+                            <p>Escenario Principal</p>
+                        </td>
+                        <td class="artista-cell" tabindex="0">
+                            <div class="artista" style="background-image: url('armin.jpeg');"
+                                role="img" aria-label="Foto de Armin van Buuren mirando al cielo"> </div>
+                        </td>
+                        <td class="info-cell" tabindex="0">
+                            <p>00:00</p>
+                            <p>Skrillex</p>
+                            <p>Escenario Principal</p>
+                        </td>
+                        <td class="artista-cell" tabindex="0">
+                            <div class="artista" style="background-image: url('skrillex.jpg');"
+                                role="img" aria-label="Dibujo de Skrillex de perfil"> </div>
+                        </td>
+                        <td class="info-cell" tabindex="0">
+                            <p>01:00</p>
+                            <p>Tiesto</p>
+                            <p>Escenario Principal</p>
+                        </td>
+                        <td class="artista-cell" tabindex="0">
+                            <div class="artista" style="background-image: url('tiesto.jpg');"
+                                role="img" aria-label="DJ Tiesto entregado a su público"> </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button id="mas-artistas" tabindex="0">Más artistas</button>
+        </section>
+
+        <section id="entradas" tabindex="0" aria-label="Compra de entradas">
+            <h2 tabindex="0">Entradas</h2>
+            <form>
+                <fieldset tabindex="0">
+                    <legend tabindex="0">Información personal</legend>
+                    <label for="nombre" tabindex="0">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required tabindex="0"><br><br>
+                    <label for="email" tabindex="0">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required tabindex="0"><br><br>
+
+                    <!-- <label for="nombre" tabindex="0">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required tabindex="0" aria-invalid="false">
+                        <span id="nombre-error" aria-live="assertive" style="color: red;"></span>
+
+                        <label for="email" tabindex="0">Correo electrónico:</label>
+                        <input type="email" id="email" name="email" required tabindex="0" aria-invalid="false">
+                        <span id="email-error" aria-live="assertive" style="color: red;"></span> -->
+                </fieldset>
+
+                <fieldset tabindex="0">
+                    <legend tabindex="0">Tipo de entrada</legend>
+                    <label tabindex="0" for="entrada">Selecciona un tipo de entrada:</label>
+                    <select tabindex="0" id="entrada" name="entrada">
+                        <option value="general" tabindex="0">Entrada General</option>
+                        <option value="vip" tabindex="0">Entrada VIP</option>
+                    </select>
+                    <!-- <label tabindex="0" for="entrada">Selecciona un tipo de entrada:</label>
+                    <select tabindex="0" id="entrada" name="entrada" aria-describedby="entrada-descripcion">
+                        <option value="general" tabindex="0">Entrada General</option>
+                        <option value="vip" tabindex="0">Entrada VIP</option>
+                    </select>
+                    <p id="entrada-descripcion">Selecciona el tipo de entrada que deseas comprar.</p> -->
+                </fieldset>
+                <button tabindex="0" type="submit">COMPRAR ENTRADAS</button>
+                <article id="bono-cultural" tabindex="0">
+                    <p tabindex="0">Si tienes 18 años y te han concedido el <strong>bono cultural</strong>, puedes comprar tus entradas aquí.</p>
+                    <button id="bono" tabindex="0">Compra con tu bono</button>
+                </article>
+            </form>
+        </section>
+
+        <section id="contacto" tabindex="0" aria-label="Información de contacto">
+            <h2 tabindex="0">Contacto</h2>
+            <p tabindex="0">Correo electrónico: info@festival.com</p>
+            <p tabindex="0">Teléfono: 93 21 21 233</p>
+        </section>
+    </main>
+
+    <footer>
+        <p tabindex="0">Derechos reservados 2025 - javi Music SCP</p>
+    </footer>
+    <!-- agregamos aria-label ja que ofrece un nombre descriptivo para las seccionwa, entre otras cosas que mejora la acces -->
+     <!-- nav aria-label="Navegación principal" -->
+      <!-- article aria-label="Vídeo promocional del festival"  y audio aria-label="Canción oficial del festival" -->
+       <!-- aria label section table de artistes -->
+        <!-- div role="img" aria-label="Descripción de la imagen" y para el div  -->
+
+                                <!-- <script>    
+                                    const nombreInput = document.getElementById('nombre');
+                                const emailInput = document.getElementById('email');
+                                const nombreError = document.getElementById('nombre-error');
+                                const emailError = document.getElementById('email-error');
+
+                                nombreInput.addEventListener('input', () => {
+                                    if (nombreInput.value.trim() === '') {
+                                        nombreInput.setAttribute('aria-invalid', 'true');
+                                        nombreError.textContent = 'Por favor, introduce tu nombre.';
+                                    } else {
+                                        nombreInput.setAttribute('aria-invalid', 'false');
+                                        nombreError.textContent = '';
+                                    }
+                                });
+
+                                                           emailInput.addEventListener('input', function() {
+                                if (!emailInput.value.includes('@') || !emailInput.value.includes('.')) {
+                                    emailInput.setAttribute('aria-invalid', 'true');
+                                    emailError.textContent = 'Introduce un correo válido';
+                                } else {
+                                    emailInput.setAttribute('aria-invalid', 'false');
+                                    emailError.textContent = '';
+                                }
+                            });
+                        </script> -->
+
+</body>
+</html>
