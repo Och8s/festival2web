@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proves d'Accessibilitat - FESTIVAL DUO ELECTRONIC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header amb rol "banner" -->
+    <header role="banner">
+        <h1>Proves d'Accessibilitat - FESTIVAL DUO ELECTRONIC</h1>
+        <nav aria-label="Navegació principal" role="navigation">
+            <ul>
+                <li><a href="index.html" tabindex="0">El festival</a></li>
+                <li><a href="prova.html" aria-current="page" tabindex="0">Accessibilitat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+         <!-- Multimèdia accessible -->
+    <section id="multimedia" class="sectionProva" tabindex="0" aria-labelledby="titol-multimedia">
+        <h2 id="titol-multimedia">Vols escoltar música mentre veus les comprobacions?</h2>
+        <audio controls aria-describedby="desc-audio" style="margin-top: 15px;">
+            <source src="media/fashion-electronic-pop-red-tape-134710.mp3" type="audio/mp3">
+            El teu navegador no admet àudio HTML5.
+        </audio>
+        <p id="desc-audio">Àudio oficial del festival amb descripció textual</p>
+    </section>
+
+        <!-- Div per a Web Helper Accessible -->
+        <div class="sectionProva" role="region" aria-labelledby="web-helper-accessible">
+            <h2 id="web-helper-accessible">Web Helper Accessible</h2>
+            <p>Resultats de l'eina Web Helper Accessible - Accessibilitat / Colors</p>
+            <div class="image-container">
+                <img src="helper1.png" alt="imatge prova 1 evaluació" class="img-prova">
+                <img src="helper2.png" alt="imatge contrast negre blanc" class="img-prova">
+                <img src="helper3.png" alt="imatge contrast lila negre" class="img-prova">
+            </div>
+        </div>
+
+        <!-- Div per a Accessibilitat Firefox -->
+        <div class="sectionProva" role="region" aria-labelledby="firefox-accessibilitat">
+            <h2 id="firefox-accessibilitat">Accessibilitat Firefox</h2>
+            <p>Resultats de l'eina d'accessibilitat de Firefox - Dalotonisme: Protanopia </p>
+            <div class="image-container">
+                <img src="firefox.png" alt="imatge contrast Daltonisme: Protanopia" class="img-prova">
+            </div>
+            <p>La protanopia és una forma de daltonisme on no es percep el color vermell. 
+                Les persones amb protanopia veuen el vermell com a beix i el verd amb tonalitats vermelloses</p>
+        </div>
+
+        <!-- Div per a Lighthouse -->
+        <div class="sectionProva" role="region" aria-labelledby="lighthouse-accessibilitat">
+            <h2 id="lighthouse-accessibilitat">Lighthouse</h2>
+            <p>Resultats de l'eina Lighthouse Accessibilitat - Colors</p>
+            <div class="image-container">
+                <img src="ligh1.png" alt="imatge Accessibilitat" class="img-prova">
+                <img src="ligh2.png" alt="imatge Rendiment Seo Accessibilitat" class="img-prova">
+            </div>
+        </div>
+
+        <!-- Div per a Are My Colors Accessible -->
+        <div class="sectionProva" role="region" aria-labelledby="colors-accessibilitat">
+            <h2 id="colors-accessibilitat">Are My Colors Accessible?</h2>
+            <p>Resultats de l'eina Are My Colors Accessible? - Colors contrast</p>
+            <div class="image-container">
+                <img src="areMy1.png" alt="imatge contrast negre blau pitufo" class="img-prova">
+                <img src="areMy2.png" alt="imatge contrast negre blanc" class="img-prova">
+            </div>
+            <p>Utilització de extensió ColorZilla de Google</p>
+        </div>
+    </main>
+
+   
+
+    <footer>
+        <p>Proves realitzades per Javier Manjón Martos</p>
+    </footer>
+</body>
+</html>
