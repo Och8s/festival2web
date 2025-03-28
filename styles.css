@@ -182,6 +182,36 @@ section {
     border-radius: 0.5em; /* 8px */
 }
 
+.sectionProva {
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #313a43;
+}
+
+.image-container {
+    background-color: #313a43;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.image-container img {
+    max-width: 30%;
+    height: auto;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-container img.img-prova:hover {
+    transform: scale(2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+
 /* Media queries */
 @media screen and (max-width: 48.75em) { /* 780px */
     header {
